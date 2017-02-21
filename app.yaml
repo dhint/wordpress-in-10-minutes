@@ -1,4 +1,4 @@
-application: APPNAME
+application: dorel-io-dev-1000
 version: v1
 runtime: php55
 api_version: 1
