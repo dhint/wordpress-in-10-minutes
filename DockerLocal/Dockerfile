@@ -2,7 +2,7 @@
 FROM        ubuntu:16.04
 
 # File Author / Maintainer
-MAINTAINER Angela Murrell
+MAINTAINER 	AnyBucket
 
 # Update the repository and install nginx and php7.0
 RUN         apt-get update && \
