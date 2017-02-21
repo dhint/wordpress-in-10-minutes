@@ -1,6 +1,7 @@
 application: dorel-io-dev-1000
 version: v1
-runtime: php55
+runtime: php
+env: flex	
 api_version: 1
 
 default_expiration: "8d"
@@ -28,7 +29,14 @@ env_variables:
   APP_WP_DB_HOST: 'database_host'
 
 ## Resources Allocation
-
+resources:
+  cpu: 2
+  memory_gb: 1.3
+  disk_size_gb: 10
+  volumes:
+  - name: ramdisk1
+    volume_type: tmpfs
+    size_gb: 0.5
 # **resources** defines the machine type that App Engine will use to serve your app based on the amount of CPU and memory you've specified. The machine is guaranteed to have at least the level of resources you've specified, it might have more.
 # **cpu** is the number of CPU cores that the machine should have.
 # **memory_gb** is the amount of RAM in Gigabytes that the machine type should have.
